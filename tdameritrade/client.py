@@ -543,6 +543,7 @@ class TDClient(object):
             accountId (int): id of account to place order under
             order (JSON): order instance to place
         """
+        print('hi')
         return self._request(
             PLACE_ORDER.format(accountId=accountId), method="POST", json=order
         )
